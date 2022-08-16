@@ -53,7 +53,7 @@ def get_ciba():
     r = get(url, headers=headers)
     note_en = r.json()["content"]
     note_ch = r.json()["note"]
- return note_ch, note_en
+    return note_ch, note_en
 
 
 client = WeChatClient(app_id, app_secret)
