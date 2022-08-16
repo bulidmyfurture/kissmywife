@@ -3,6 +3,7 @@ import math
 from wechatpy import WeChatClient
 from wechatpy.client.api import WeChatMessage, WeChatTemplate
 import requests
+from requests import get, post
 import os
 import random
 
