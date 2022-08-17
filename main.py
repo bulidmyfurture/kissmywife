@@ -15,7 +15,7 @@ birthday = os.environ['BIRTHDAY']
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
 
-user_id = ["oYnjO6uwFCUxabv1khTNgb2-j5g8"]
+user_id = ["oYnjO6uwFCUxabv1khTNgb2-j5g8", "oYnjO6iKRJmszyyQGC3SKdm_Wah8"]
 
 template_id = os.environ["TEMPLATE_ID"]
 
@@ -76,5 +76,6 @@ data = {"weather": {"value": wea}, "city": {"value": city}, "temperature": {"val
         "note_ch": {"value": note_ch, "color": get_random_color()},
         "note_en": {"value": note_en, "color": get_random_color()}}
 res = wm.send_template(user_id[0], template_id, data)
+res1 = wm.send_template(user_id[1], template_id, data)
 print(res)
-
+print(res1)
