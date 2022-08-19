@@ -76,6 +76,4 @@ data = {"weather": {"value": wea}, "city": {"value": city}, "temperature": {"val
         "note_ch": {"value": note_ch, "color": get_random_color()},
         "note_en": {"value": note_en, "color": get_random_color()}}
 res = wm.send_template(user_id[0], template_id, data)
-#res1 = wm.send_template(user_id[1], template_id, data)
-print(res)
-#print(res1)
+res1 = wm.send_template(user_id[1], template_id, data)
